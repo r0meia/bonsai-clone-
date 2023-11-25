@@ -1,54 +1,94 @@
-/* input[type=checkbox]{
-    height: 0;
-    width: 0;
-    visibility: hidden;
-  }
-  
-  label {
-    cursor: pointer;
-    text-indent: -9999px;
-    width: 200px;
-    height: 100px;
-    background: grey;
-    display: block;
-    border-radius: 100px;
-    position: relative;
-  }
-  
-  label:after {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 90px;
-    height: 90px;
-    background: #fff;
-    border-radius: 90px;
-    transition: 0.3s;
-  }
-  
-  input:checked + label {
-    background: #bada55;
-  }
-  
-  input:checked + label:after {
-    left: calc(100% - 5px);
-    transform: translateX(-100%);
-  }
-  
-  label:active:after {
-    width: 130px;
-  }
-  
-  // centering
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  } */
+
+  @import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Raleway';
+    color: #4c525a;
   }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1.125rem;
+  }
+  .logo > img {
+    height: 31px;
+    width: 150px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .bars {
+    padding: 1rem;
+  }
+  .heading-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .heading > h1 {
+    font-weight: 500;
+    margin-top: 1rem;
+  }
+  .monthly-yearly {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3.125rem;
+    align-items: center;
+    justify-content: center;
+  }
+  #first-section {
+  padding: 0 1rem;
+}
+.monthly {
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  font-weight: 600;
+  letter-spacing: 1.22px;
+}
+.yearly {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  opacity: 0.65;
+  letter-spacing: 1.22px;
+}
+input[type=checkbox]{
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 50px;
+  height: 29px;
+  background: #01b289;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.15s;
+}
+
+input:checked + label:after {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+.toogle {
+  margin: 0 1.75rem;
+  display: flex;
+}
