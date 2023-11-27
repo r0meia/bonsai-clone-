@@ -104,6 +104,9 @@ input:checked + label:after {
   width: 100%;
   height: 100%;
 }
+.plan > a {
+  text-decoration: none;
+}
 .plan-p {
   margin-top: 0.5rem;
   font-size: 0.875rem;
@@ -172,4 +175,135 @@ li::before {
   position: absolute;
   top: 6%;
   left: 30%;
+}
+.second-section-wrapper {
+  padding: 0 1.25rem;
+}
+.add-ons-h > h3{
+  margin-top: 4.5rem;
+  padding-top: 1.875rem;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+  line-height: 2rem;
+  padding-bottom: 1.875rem;
+}
+.add-on-box {
+  width: 100%;
+  padding: 1.25rem 2.5rem;
+  box-shadow: 0 0 60px 0 rgba(2,4,69,.05);
+  margin-bottom: 0.625rem;
+  border-radius: 10px;
+}
+.add-on-box-h.first {
+  font-size: 1.5rem;
+  padding: 0 0 1rem;
+}
+.add-on-box-h {
+  font-size: 2.5rem;
+  padding: 1rem 0 0 0;
+}
+.per-month {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  margin: 0.8rem 0 1.5rem 0;
+  font-weight: 500;
+}
+.add-on-box-p {
+  font-weight: 600;
+  margin-bottom: 0.225rem;
+}
+.add-on-box-description {
+  font-weight: 300;
+  margin-bottom: 0.625rem;
+}
+.add-on-box > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #00b289;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-align: center;
+}
+.add-on-box > a > img {
+  height: 10px;
+}
+.grow-div {
+  margin: 5rem 0;
+  padding: 2.5rem 0.938rem 3.125rem;
+  font-size: 2.5rem;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #f2faff;
+  line-height: 130%;
+  font-weight: 500;
+}
+.grow-div > span {
+  color: #00b289;
+}
+.grow-start-free {
+  display: inline-block;
+  width: 140px;
+  height: 48px;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  background-image: linear-gradient(190deg,#00b289,#00a881);
+  border-radius: 4px;
+  color: white;
+}
+.frequently-asked {
+  padding: 0 1.25rem;
+  margin-bottom: 5rem;
+}
+.frequently-asked-h {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00b289;
+  margin: 1.25rem 0 2.5rem;
+  text-align: center;
+}
+.frequently-asked-item > h5{
+  font-size: 1.563rem;
+  margin: 1.25rem 10% 0.625rem;
+}
+footer {
+  padding: 2.5rem 1.125rem 9.75rem;
+}
+.footer-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer-links > a {
+  text-decoration: none;
+}
+.footer-links.second {
+  margin-top: 2rem;
+}
+.footer-links.second > a:first-of-type {
+  color: #00b289;
+}
+.footer-links.third {
+  margin-top: 3rem;
+}
+.footer-sub-title { 
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+.footer-links.fourth {
+  margin: 2rem 0;
+}
+.footer-links-dropdown {
+  margin-top: 3rem;
+}
+.footer-links-dropdown > a {
+  text-decoration: none;
 }
